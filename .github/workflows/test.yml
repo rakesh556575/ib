@@ -25,10 +25,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: install pytest 
       run: 
-         sudo apt-get update -y
          sudo apt-get install -y python-pytest
 
     # Runs a set of commands using the runners shell
     - name: run test file
-      run: |
+      run:
           pytest test.py
